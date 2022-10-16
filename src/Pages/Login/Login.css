@@ -1,0 +1,111 @@
+.gradient-bg {
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0,
+    transparent 40%,
+    transparent 75%,
+    rgba(0, 0, 0, 0.8)
+  );
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+}
+
+.login {
+  background-color: black;
+  height: 100vh;
+  background: url("https://miro.medium.com/max/1400/1*5lyavS59mazOFnb55Z6znQ.png")
+    center no-repeat;
+  background-size: cover;
+}
+.login_items {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.loginLogo {
+  height: 100%;
+  width: 8rem;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.signinBtn {
+  padding: 0rem 1.2rem;
+  border: 0;
+  border-radius: 4px;
+  background: rgba(229, 9, 20, 0.9);
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Body */
+.loginBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  margin: 7rem 0;
+  padding: 0 2rem;
+}
+
+.loginBody > h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.loginBody > h3 {
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.loginBody > h4 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding-bottom: 1.5rem;
+}
+.signinForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signinForm input {
+  height: 70px;
+  width: 500px;
+  padding-left: 1rem;
+}
+
+.signinForm button {
+  background: rgba(229, 9, 20, 0.9);
+  height: 70px;
+  width: 245px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 962px) {
+  .signinForm input {
+    align-items: center;
+  }
+  .loginBody > h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .loginBody > h4 {
+    font-size: 1.33rem;
+    text-align: center;
+  }
+  .signinForm input {
+    width: 100%;
+  }
+  .signinForm button {
+    width: 200px;
+  }
+}
